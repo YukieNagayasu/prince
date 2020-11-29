@@ -75,6 +75,10 @@ img {
   font-size: 0.2rem;
   font-weight: 400;
 }
+.header-btns>a>.experience-btn>p>.fa-pencil::before, .header-btns>a>.tel-btn>.tel-btn-inner>p>.fa-phone::before {
+  padding-right: 0.78125vw;
+  font-size: .25rem;
+}
 .tel-btn {
   position: relative;
   width: 18.75vw;
@@ -191,6 +195,10 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+}
+.footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.fa-phone::before {
+  padding-right: 0.78125vw;
+  font-size: .25rem;
 }
 .tel-number {
   font-size: .2rem;
@@ -1460,6 +1468,10 @@ h2>.q-mark {
   .tel-box {
     width: 73.33vw;
     height: 24vw;
+  }
+  .footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.fa-phone::before {
+    padding-right: 2.66vw;
+    font-size: .50rem;
   }
   .footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.tel-number {
     font-size: .48rem;
