@@ -31,6 +31,7 @@ img {
 	height: auto;
 }
 
+
 /***     header     ***/
 .header {
   position: fixed;
@@ -302,8 +303,9 @@ img {
   font-weight: 300;
   letter-spacing: .07rem;
 }
-
-
+.eyechatch-sp {
+  display: none;
+}
 
 
 /**********************/
@@ -1445,11 +1447,6 @@ h2>.q-mark {
   html {
     font-size: calc(100vw / 7.50);
   }
-  /*
-  br {
-     display: none;
-  }
-  */
 
   /***     header     ***/
   .header {
@@ -1606,6 +1603,12 @@ h2>.q-mark {
     font-size: .36rem;
     letter-spacing: 0.05rem;
   }
+  .eyechatch-home {
+    display: none;
+  }
+  .eyechatch-sp {
+    display: block;
+  }
 
 
   /**********************/
@@ -1626,6 +1629,7 @@ h2>.q-mark {
     margin-top: 17.6vw;    
     letter-spacing: 0.18rem;
     line-height: .72rem;
+    text-shadow: 2px 1px 3px #fff;
   }
   /* about */
   .home-about {
@@ -2571,16 +2575,6 @@ h2>.q-mark {
   }
 
 
-
-
-
-
-
-
-
-
-
-  
   /***********************/
   /***    hamburger    ***/
   /***********************/
@@ -2651,7 +2645,7 @@ h2>.q-mark {
     letter-spacing: .05rem;        
     color: #fff;  
     text-align: left;
-    padding-left: 10.66vw; /* 80px */
+    padding-left: 10.66vw;
   }
   .hamburger-subitem {
     font-size: .32rem;
@@ -2714,10 +2708,5 @@ h2>.q-mark {
     padding-bottom: 4vw;
     display: block;
   }
-
-
-  
-
-  
 
 }
