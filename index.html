@@ -19,6 +19,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 
@@ -28,8 +30,37 @@
   <div class="header-icons">
     <a href="index.html"><img class=header-logo src="images/common/hp/header_logo_hp.png" alt=""></a>
     <a href="index.html"><img class=header-logo-sp src="images/common/sp/header_logo_sp.png" alt=""></a>
-  
-    <img class="hamberger" src="images/hamburger_menu/hamburgerbtn_blue.png" alt="">
+
+    <!-- hamberger -->
+    <nav class="hamburger-wrapper">
+      <ul class="hamburger-nav">
+        <li class="hamburger-item"><a href="index.html">ホーム</a></li>
+        <li class="hamburger-item"><a href="about/index.html">プリンス進学塾とは</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="about/index.html#about-feature">特徴</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="about/index.html#about-greeting">塾長あいさつ</a></li>
+        <li class="hamburger-item"><a href="elementary/index.html">小学生</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="elementary/index.html#ele-policy">指導方針</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="elementary/index.html#ele-schedule">時間割</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="elementary/index.html#ele-fee">料金</a></li>
+        <li class="hamburger-item"><a href="juniorhighschool/index.html">中学生</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="juniorhighschool/index.html#juni-policy">指導方針</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="juniorhighschool/index.html#juni-schedule">時間割</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="juniorhighschool/index.html#juni-fee">料金</a></li>
+        <li class="hamburger-item"><a href="faq/index.html">よくあるご質問</a></li>
+        <li class="hamburger-item"><a href="access/index.html">アクセス</a></li>
+        <li class="hamburger-item"><a href="contact/index.html">お問い合わせ</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="contact/index.html#trial-lesson">無料体験授業</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="contact/index.html#document-request">資料請求</a></li>
+        <li class="hamburger-item hamburger-subitem"><span class="fa fa-chevron-circle-right chevron"></span><a href="contact/index.html#other">その他お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <div class="burger-btn">
+      <span class="bar bar_top"></span>
+      <span class="bar bar_mid"></span>
+      <span class="bar bar_bottom"></span>
+    </div>
+    <!-- /hamberger -->
     
     <div class="header-btns">
       <a href="contact/index.html#trial-lesson">
@@ -62,17 +93,39 @@
 </header>
 <!-- /header -->
 
-
-
 <main>
-
   <!-- eyechatch -->
-  <section class="eyechatch">
-    <div class="eyechatch-inner">
-      <img class="eyechatch-pc-img" src="images/home/hp/mv_sakura_01_hp.jpg" alt="">
-      <img class="eyechatch-sp-img" src="images/home/sp/mv_sakura_01_sp.jpg" alt="">
-      <h1 class="home-eyechatch-text">ひとりひとりの<br>チカラを信じる</h1>
-      <h1 class="home-eyechatch-text-sp">ひとり<br>ひとりの<br>チカラを<br>信じる</h1>
+  <section class="eyechatch eyechatch-home">
+    <div class="eyechatch-pc-sliders" id="slider">
+      <div class="eyechatch-pc-item">
+        <img class="eyechatch-pc-img" src="images/home/hp/mv_sakura_01_hp.jpg" alt="">
+        <h1 class="home-eyechatch-text">ひとりひとりの<br>チカラを信じる</h1>
+      </div>
+      <div class="eyechatch-pc-item">
+        <img class="eyechatch-pc-img" src="images/home/hp/mv_sakura_02_hp.jpg" alt="">
+        <h1 class="home-eyechatch-text">ひとりひとりの<br>チカラを信じる</h1>
+      </div>
+      <div class="eyechatch-pc-item">
+        <img class="eyechatch-pc-img" src="images/home/hp/mv_sakura_03_hp.jpg" alt="">
+        <h1 class="home-eyechatch-text">ひとりひとりの<br>チカラを信じる</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="eyechatch-sp">
+    <div class="eyechatch-sp-sliders" id="slider_sp">
+      <div class="eyechatch-sp-item">
+        <img class="eyechatch-sp-img" src="images/home/sp/mv_sakura_01_sp.jpg" alt="">
+        <h1 class="home-eyechatch-text-sp">ひとり<br>ひとりの<br>チカラを<br>信じる</h1>
+      </div>
+      <div class="eyechatch-sp-item">
+        <img class="eyechatch-sp-img" src="images/home/sp/mv_sakura_02_sp.jpg" alt="">
+        <h1 class="home-eyechatch-text-sp">ひとり<br>ひとりの<br>チカラを<br>信じる</h1>
+      </div>
+      <div class="eyechatch-sp-item">
+        <img class="eyechatch-sp-img" src="images/home/sp/mv_sakura_03_sp.jpg" alt="">
+        <h1 class="home-eyechatch-text-sp">ひとり<br>ひとりの<br>チカラを<br>信じる</h1>
+      </div>
     </div>
   </section>
   <!-- /eyechatch -->
@@ -148,7 +201,6 @@
     <div class="subtitle">
       <h2>アクセス</h2>
     </div>
-
     <p class="home-access-text">031-0041　青森県八戸市二十三日町14<br>
       TEL 0178-22-1355<br>
       FAX 0178-72-1132<br>
@@ -162,9 +214,6 @@
 
   </section>
   <!-- /access -->
-
-
-
 
   <!-- notice -->
   <section class="home-notice">
@@ -181,7 +230,7 @@
         <img class="course-pc-img" src="images/home/hp/test_hp.jpg" alt="">
         <img class="course-sp-img" src="images/home/sp/test_sp.jpg" alt="">
         <div class="access-menubar">
-          <a href="./" class="menubar">
+          <a href="https://www.facebook.com/prince.hachinohe" target="_blank" rel="noopener noreferrer" class="menubar">
             <span>プリンス進学塾</span>
             <span>公式facebook</span>
           </a>
@@ -204,6 +253,32 @@
 <!-- footer -->
 <footer class="footer">
   <div class="footer-inner">
+
+    <!-- bottom-nav -->
+    <nav class="footer-nav">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a href="tel:0178221355">
+            <img class="footer-nav-item-img" src="images/common/sp/bottomnav_icon_tel.png" alt="">
+            <span>お電話</span>
+          </a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="contact/index.html#trial-lesson">
+            <img class="footer-nav-item-img" src="images/common/sp/bottomnav_icon_study.png" alt="">
+            <span>無料体験授業</span>
+          </a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="contact/index.html#document-request">
+            <img class="footer-nav-item-img" src="images/common/sp/bottomnav_icon_memo.png" alt="">
+            <span>資料請求</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /bottom-nav -->
+
     <div class="logo-and-access">
       <a href="index.html">
         <img class="footer-pc-logo" src="images/common/hp/footer_logo_hp.png" alt="">
@@ -219,8 +294,8 @@
         </div>
       </a>
       <p class="footer-text">031-0041 <br>青森県八戸市二十三日町14</p>
-      <img class="facebook-icon" src="images/common/hp/facebook_blue.png" alt="">
-      <img class="facebook-icon-sp" src="images/common/sp/facebook_blue.png" alt="">
+      <a href="https://www.facebook.com/prince.hachinohe" target="_blank" rel="noopener noreferrer"><img class="facebook-icon" src="images/common/hp/facebook_blue.png" alt=""></a>
+      <a href="https://www.facebook.com/prince.hachinohe" target="_blank" rel="noopener noreferrer"><img class="facebook-icon-sp" src="images/common/sp/facebook_blue.png" alt=""></a>
     </div>
 
     <div class="footer-navigations">
@@ -265,5 +340,9 @@
   </div>
 </footer>
 <!-- /footer -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
