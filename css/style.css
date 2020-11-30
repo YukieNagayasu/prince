@@ -764,8 +764,14 @@ img {
 .access-inquiry>.inquiry-texts>.access-menubar>.menubar {
   width: 30.703125vw;
   background-color: #a4c520;
+  border: 1px solid #a4c520;
   font-size: .24rem;
   padding: 3.1640625vw 0 3.1640625vw 2.5vw;
+}
+.access-inquiry>.inquiry-texts>.access-menubar>.menubar:hover {
+  background-color: #fff;
+  border-color: #a4c520;
+  color: #a4c520;
 }
 .access-inquiry>.inquiry-texts>.access-menubar>.menubar:after {
 	right: 1.5625vw;
@@ -824,11 +830,17 @@ h2>.q-mark {
   width: 22.5vw;
   display: block;
   background-color: #13469a;
+  border: 1px solid #13469a;
   color: #fff;
   font-size: .16rem;
   font-weight: 400;
   padding: 1.5625vw 0 1.5625vw 2.5vw;
   position: relative;
+}
+.question-menubar>.menubar:hover {
+  background-color: #fff;
+  border-color: #13469a;
+  color: #13469a;
 }
 .question-menubar>.menubar:first-of-type {
   margin-right: 4.6875vw;
@@ -913,7 +925,13 @@ h2>.q-mark {
 .access-inquiry.contact-inquiry>.inquiry-texts>.access-menubar>.menubar {
   width: 31.640625vw;
   background-color: #13469a;
+  border: 1px solid #13469a;
   padding: 3.1640625vw 0 3.1640625vw 3.125vw;
+}
+.access-inquiry.contact-inquiry>.inquiry-texts>.access-menubar>.menubar:hover {
+  background-color: #fff;
+  border-color: #13469a;
+  color: #13469a;
 }
 .access-inquiry.contact-inquiry>.inquiry-texts>.access-menubar>.menubar:after {
   right: 2.5vw;
