@@ -1524,6 +1524,9 @@ h2>.q-mark {
     width: 5.33vw;
     padding-bottom: 12.8vw;
   }
+  .facebook-icon-sp:hover {
+    transform:scale(1.2,1.2);
+  }
   .tel-box {
     width: 73.33vw;
     height: 24vw;
