@@ -637,6 +637,12 @@ img {
   position: relative;
   margin: 0;
   background-color: #a4c520;
+  border: 1px solid #a4c520;
+}
+.home-notice-contact>.access-menubar>.menubar:hover {
+  background-color: #fff;
+  border-color: #a4c520;
+  color: #a4c520;
 }
 .access-menubar>.menubar:after {
   right: 3.125vw;
