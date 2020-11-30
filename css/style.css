@@ -61,10 +61,16 @@ img {
   width: 25vw;
   height: 3.75vw;
   margin-right: 0.78125vw;
-  background-color: #0d3f93;
+  background-color: #13469a;
+  border: 1px solid #13469a;
   color: #fff;
   border-radius: 1.5em;
   text-align: center;
+}
+.experience-btn:hover {
+  background-color: #fff;
+  border-color: #13469a;
+  color: #13469a;
 }
 .experience-btn-text {
   position: absolute;
