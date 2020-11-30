@@ -196,6 +196,9 @@ img {
 .facebook-icon {
   width: 2.578125vw;
 }
+.facebook-icon:hover{
+  transform:scale(1.1,1.1);
+}
 .facebook-icon-sp {
   display: none;
 }
@@ -204,8 +207,14 @@ img {
   width: 21.875vw;
   height: 7.03125vw;
   background-color: #13469a;
+  border: 1px solid #13469a;
   color: #fff;
   text-align: center;
+}
+.tel-box:hover {
+  background-color: #fff;
+  border-color: #13469a;
+  color: #13469a;
 }
 .tel-btn-inner {
   position: absolute;
@@ -544,7 +553,7 @@ img {
   font-size: .14rem;
   font-weight: 400;
   color: #333;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.04rem;
   line-height: .50rem;
   padding-top: 4.6875vw;;
   padding-left: 14.21875vw;
