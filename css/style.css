@@ -309,6 +309,7 @@ img {
   font-weight: 100;
   letter-spacing: 0.15rem;
   line-height: .72rem;
+  text-shadow: 2px 2px 10px #fff;
 }
 .home-eyechatch-text-sp {
   display: none;
