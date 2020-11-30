@@ -84,10 +84,17 @@ img {
   width: 18.75vw;
   height: 3.75vw;
   background-color: #a4c520;
+  border: 1px solid #a4c520;
   color: #fff;
   border-radius: 1.5em;
   text-align: center;
 }
+.tel-btn:hover {
+  background-color: #fff;
+  border-color: #a4c520;
+  color: #a4c520;
+}
+
 .tel-btn-inner {
   position: absolute;
   width: 100%;
