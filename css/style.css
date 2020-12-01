@@ -1553,7 +1553,7 @@ h2>.q-mark {
   .facebook-icon-sp {
     display: inline-block;
     width: 5.33vw;
-    padding-bottom: 12.8vw;
+    margin-bottom: 12.8vw;
   }
   .facebook-icon-sp:hover {
     transform:scale(1.2,1.2);
