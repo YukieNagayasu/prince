@@ -2396,10 +2396,10 @@ h2>.q-mark {
     display: flex;
     font-size: .24rem;
     font-weight: 400;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.02rem;
   }
   .monday>dt, .tuesday>dt, .wednesday>dt, .thursday>dt, .friday>dt, .saturday>dt {
-    padding-right: 6.4vw;
+    padding-right: 4.26vw;
 
     padding-bottom: 5.33vw;
   }
@@ -2414,7 +2414,7 @@ h2>.q-mark {
     padding-left: 2.66vw;
   }
   .schedule-text {
-    font-size: .20rem;
+    font-size: .14rem;
     font-weight: 400;
     padding-bottom: 17.066vw;
     padding-left: 0;
