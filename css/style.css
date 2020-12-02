@@ -2360,6 +2360,7 @@ h2>.q-mark {
   }
   .subject-content {
     font-size: .28rem;
+    letter-spacing: 0.05rem;
     font-weight: 400;
     text-align: center;
     padding-top: 0;
@@ -2370,7 +2371,7 @@ h2>.q-mark {
     padding-top: 4.266vw;
     padding-bottom: 14.933vw;;
     font-size: .22rem;
-    font-weight: 300;
+    font-weight: 400;
   }
   .schedule-box-subject {
     display: flex;
@@ -2414,7 +2415,7 @@ h2>.q-mark {
     padding-left: 2.66vw;
   }
   .schedule-text {
-    font-size: .14rem;
+    font-size: .16rem;
     font-weight: 400;
     padding-bottom: 17.066vw;
     padding-left: 0;
