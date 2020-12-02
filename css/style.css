@@ -1674,6 +1674,9 @@ h2>.q-mark {
     line-height: .72rem;
     text-shadow: 2px 1px 3px #fff;
   }
+  .home-eyechatch-text-sp-white {
+    color: #fff;
+  }
   /* about */
   .home-about {
     position: static;
