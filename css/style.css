@@ -1643,8 +1643,9 @@ h2>.q-mark {
     width: 41.466vw; 
     padding: 10.933vw 0;
     padding-right: 8.533vw;
+    padding-left: 4.266vw;
     font-size: .36rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.06rem;
   }
   .eyechatch-home {
     display: none;
