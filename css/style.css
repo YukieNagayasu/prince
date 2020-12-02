@@ -399,7 +399,7 @@ li a:hover {
   font-size: .36rem;
   font-weight: 400;
   color: #0d3f93;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.03rem;
   padding: 18.75vw 0 0 16.71875vw;
 }
 .home-about>.inquiry-texts>.subtitle::after {
@@ -414,7 +414,7 @@ li a:hover {
   padding: 4.6875vw 0 4.6875vw 16.71875vw;
   font-size: .14rem;
   font-weight: 400;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.03rem;
   line-height: .35rem;
 }
 .home-about>.inquiry-texts>.access-menubar {
@@ -717,7 +717,7 @@ li a:hover {
   padding: 0 12.5vw 12.5vw;
 }
 .access-text>p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: .14rem;
   color: #333;
   letter-spacing: 0.025rem;
@@ -780,7 +780,7 @@ li a:hover {
   padding: 15.625vw 0 6.875vw 14.21875vw;
   font-size: .3rem;
   font-weight: 300;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.03rem;
   line-height: .5rem;
 }
 .access-inquiry>.inquiry-texts>.inquiry-tel {
@@ -793,7 +793,7 @@ li a:hover {
 .access-inquiry>.inquiry-texts>.inquiry-tel-time {
   padding: 0 0 6.25vw 17.96875vw;
   font-size: .18rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.025rem;
   color: #0d3f93;
 }
@@ -927,7 +927,7 @@ h2>.q-mark {
   font-size: .18rem;
   font-weight: 300;
   color: #0d3f93;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
   padding: 9.375vw 0 0 14.21875vw;
 }
 .access-inquiry.contact-inquiry>.inquiry-texts>.subtitle {
@@ -948,14 +948,14 @@ h2>.q-mark {
 .access-inquiry.contact-inquiry>.inquiry-texts>.inquiry-text {
   padding: 3.90625vw 0 5vw 14.21875vw;
   font-size: .24rem;
-  line-height: .3rem;
+  line-height: .4rem;
 }
 .access-inquiry.contact-inquiry>.inquiry-texts>.inquiry-tel-text {
   padding: 0 0 2.34375vw 14.21875vw;
   font-size: .18rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #0d3f93;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.03rem;
 }
 .access-inquiry.contact-inquiry>.inquiry-texts>.inquiry-tel {
   padding: 0 0 2.34375vw 14.21875vw;
@@ -1113,7 +1113,7 @@ h2>.q-mark {
   padding-left: 2.34375vw;
   font-size: .18rem;
   padding-top: .12rem;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.03rem;
   font-weight: 300;
 }
 .sp-new-line {
@@ -1194,7 +1194,7 @@ h2>.q-mark {
 .schedule-box-text {
   font-size: .24rem;
   font-weight: 400;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.04rem;
   color: #0d3f93;
   padding-bottom: 5vw;
   padding-left: 8.59375vw;
@@ -1219,9 +1219,9 @@ h2>.q-mark {
   background-color: #3261ae;
 }
 .subject-content {
-  font-size: .18rem;
-  font-weight: 500;
-  letter-spacing: 0.025rem;
+  font-size: .16rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
   color: #3ca3b5;
   padding-top: 1.796875vw;
   padding-left: 4.0625vw;
@@ -1238,14 +1238,14 @@ h2>.q-mark {
   color: #3261ae;
 }
 .monday>dt, .tuesday>dt, .wednesday>dt, .thursday>dt, .friday>dt, .saturday>dt {
-  padding-right: 4.0625vw;
+  padding-right: 3.125vw;
   padding-bottom: 3.75vw;
 }
 .saturday>dt {
   padding-bottom: 4.375vw;
 }
 .monday>dd, .tuesday>dd, .wednesday>dd, .thursday>dd, .friday>dd, .saturday>dd {
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.025rem;
 }
 .schedule-content {
   padding-top: 1.796875vw;
@@ -1255,7 +1255,7 @@ h2>.q-mark {
   font-size: .16rem;
   font-weight: 300;
   color: #0d3f93;
-  padding-left: 31.71875vw;
+  padding-left: 31.25vw;
   letter-spacing: 0.025rem;
 }
 .fee>.subtitle {
@@ -2140,7 +2140,7 @@ h2>.q-mark {
     text-align: center;
     font-size: .22rem;
     font-weight: 400;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
   }
   .access-inquiry.contact-inquiry>.inquiry-texts>.inquiry-tel {
     padding: 0 0 4.266vw 0;
@@ -2153,7 +2153,7 @@ h2>.q-mark {
     text-align: center;
     font-size: .22rem;
     font-weight: 400;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
   }
   .access-inquiry.contact-inquiry>.inquiry-texts>.access-menubar {
     padding: 0 0 0 10.66vw;
@@ -2374,8 +2374,8 @@ h2>.q-mark {
   .subject-content-sub {
     display: block;
     padding-top: 4.266vw;
-    padding-bottom: 14.933vw;;
-    font-size: .22rem;
+    padding-bottom: 14.933vw;
+    font-size: .20rem;
     font-weight: 400;
   }
   .schedule-box-subject {
