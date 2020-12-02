@@ -2506,7 +2506,7 @@ h2>.q-mark {
   }
   .fee-text>p {
     font-size: .20rem;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.05rem;
     line-height: .24rem;
     padding-bottom: 4vw;
@@ -2527,6 +2527,7 @@ h2>.q-mark {
   .campaign-title {
     font-size: .36rem;
     font-weight: 400;
+    letter-spacing: 0.05rem;
     padding-left: 2.66vw;
     padding-top: 2.133vw;
   }
@@ -2538,7 +2539,7 @@ h2>.q-mark {
   .campaign-text {
     padding: 8.533vw 9.33vw;
     font-size: .28rem;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.03rem;
     line-height: .40rem;
   }
