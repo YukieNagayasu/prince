@@ -2171,7 +2171,8 @@ h2>.q-mark {
   .eyechatch-text.about {
     width: 44.66vw; 
     padding: 7.066vw 0;
-    padding-right: 5.33vw;
+    padding-right: 5.333vw;
+    padding-left: 4.266vw;
     line-height: .48rem;
   }
   .feature {
