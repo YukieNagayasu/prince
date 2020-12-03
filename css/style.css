@@ -1131,7 +1131,6 @@ h2>.q-mark {
 .sp-new-line {
   display: none;
 }
-
 .policy-item {
   display: flex;
   justify-content: flex-end;
@@ -1190,7 +1189,6 @@ h2>.q-mark {
 .fee-item-sp-img {
   display: none;
 }
-
 .schedule>.schedule-item-pc-img {
   width: 100vw;
 }
@@ -1304,24 +1302,31 @@ h2>.q-mark {
   padding: 3.125vw 0 5.46875vw 0;
   text-align: center;
 }
-.subject-01, .subject-02, .subject-03, .subject-04 {
+.subject-01, .subject-02, .subject-03, .subject-04, .material-01, .material-02 {
   display: flex;
   color: #333;
-  padding-bottom: 2.34375vw;
-  padding-left: 3.125vw;
+  padding: 0 2.5vw 2.34375vw 1.875vw;
 }
+.ele-fee-sub {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+
 .subject-01 {
   padding-top: 3.125vw;
 }
 .subject-04 {
   padding-bottom: 5.46875vw;
 }
-.material-01, .material-02 {
-  display: flex;
-  color: #333;
-  padding-bottom: 2.34375vw;
-  padding-left: 1.875vw;
-  padding-right: 2.5vw;
+.fee-material, .fee-subject {
+  width: 25vw;
+}
+.junior-material-01,.junior-material-02 {
+  padding-left: 3.125vw ;
+}
+.junior-subject-01>dd,.junior-subject-02>dd,.junior-material-01>dd,.junior-material-02>dd {
+  padding-right: 3.125vw;
 }
 .material-01 {
   padding-top: 3.125vw;
@@ -1339,10 +1344,14 @@ h2>.q-mark {
   font-weight: 300;
   letter-spacing: 0.025rem;
   margin-left: auto;
+  padding-right: 0;
+}
+.junior-material-01>dd, .junior-material-02>dd{
   padding-right: 3.125vw;
 }
 .material-01>dd, .material-02>dd {
   padding-right: 2.5vw;
+  padding-right: 0;
  }
 .fee-text>p {
   font-size: .14rem;
@@ -1413,12 +1422,6 @@ h2>.q-mark {
 .junior-subject-02 {
   padding-bottom: 7.8125vw;
   padding-left: 3.125vw;
-}
-.subject-01.junior-subject-01>dd, .subject-02.junior-subject-02>dd {
-  padding-right: 2.34375vw;
-}
-.material-01.junior-material-01>dd, .material-02.junior-material-02>dd {
-  padding-right: 2.34375vw;
 }
 .material-02.junior-material-02 {
   padding-bottom: 6.25vw;
@@ -2465,6 +2468,9 @@ h2>.q-mark {
   .fee-item-sp-img {
     width: 100%;
   }
+  .fee-material, .fee-subject {
+    width: auto;
+  }
   .fee-menubar {
     font-size: .28rem;
     font-weight: 400;
@@ -2488,8 +2494,8 @@ h2>.q-mark {
   }
   .subject-01, .subject-02, .subject-03, .subject-04 {
     padding-bottom: 5.33vw;
-    padding-left: 30.266vw;
-    padding-right: 30.266vw;
+    padding-left: 28.8vw;
+    padding-right: 28.8vw;
   }
   .subject-01>dt, .subject-02>dt, .subject-03>dt, .subject-04>dt, .material-01>dt, .material-02>dt {
     font-size: .28rem;
