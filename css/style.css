@@ -1162,7 +1162,7 @@ h2>.q-mark {
   display: none;
 }
 .policy-item-title {
-  padding: 4.6875vw 0 4.6875vw 4.6875vw;
+  padding: 4.6875vw 0 2.5vw 4.6875vw;
   font-size: .30rem;
   font-weight: 500;
   letter-spacing: 0.025rem;
@@ -1308,7 +1308,7 @@ h2>.q-mark {
   display: flex;
   color: #333;
   padding-bottom: 2.34375vw;
-  padding-left: 6.171875vw;
+  padding-left: 3.125vw;
 }
 .subject-01 {
   padding-top: 3.125vw;
@@ -1320,7 +1320,7 @@ h2>.q-mark {
   display: flex;
   color: #333;
   padding-bottom: 2.34375vw;
-  padding-left: 3.125vw;
+  padding-left: 1.875vw;
   padding-right: 2.5vw;
 }
 .material-01 {
@@ -1332,14 +1332,14 @@ h2>.q-mark {
 .subject-01>dt, .subject-02>dt, .subject-03>dt, .subject-04>dt, .material-01>dt, .material-02>dt {
   font-size: .16rem;
   font-weight: 300;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.03rem;
 }
 .subject-01>dd, .subject-02>dd, .subject-03>dd, .subject-04>dd, .material-01>dd, .material-02>dd {
   font-size: .18rem;
   font-weight: 300;
   letter-spacing: 0.025rem;
   margin-left: auto;
-  padding-right: 6.015625vw;
+  padding-right: 3.125vw;
 }
 .material-01>dd, .material-02>dd {
   padding-right: 2.5vw;
