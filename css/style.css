@@ -1342,7 +1342,7 @@ h2>.q-mark {
 .subject-01>dd, .subject-02>dd, .subject-03>dd, .subject-04>dd, .material-01>dd, .material-02>dd {
   font-size: .18rem;
   font-weight: 300;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.03rem;
   margin-left: auto;
   padding-right: 0;
 }
