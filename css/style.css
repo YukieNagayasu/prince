@@ -1680,17 +1680,12 @@ h2>.q-mark {
     left: 0;
     font-size: .48rem;
     color: #333;
-    font-weight: 300;
+    font-weight: 100;
     margin-left: 66.65vw;
     margin-top: 17.6vw;    
     letter-spacing: 0.18rem;
     line-height: .72rem;
-    text-shadow: 2px  2px 5px #fff,
-            -2px  2px 5px #fff,
-             2px -2px 5px #fff,
-            -2px -2px 5px #fff;
-    /*text-shadow: 0 0 30px #ff00f2;*/
-    /*text-shadow: 1px 1px 10px #fff, 1px -1px 10px #fff, -1px 1px 10px #fff, -1px -1px 10px #fff;*/
+    text-shadow: 2px 2px 10px #fff,-2px 2px 10px #fff,2px -2px 10px #fff,-2px -2px 10px #fff;
   }
   /* about */
   .home-about {
