@@ -376,7 +376,7 @@ li a:hover {
   font-weight: 100;
   letter-spacing: 0.15rem;
   line-height: .72rem;
-  text-shadow: 2px 2px 10px #fff;
+  text-shadow: 2px 2px 10px #fff,-2px 2px 10px #fff,2px -2px 10px #fff,-2px -2px 10px #fff;
 }
 .home-eyechatch-text-sp {
   display: none;
@@ -1679,7 +1679,7 @@ h2>.q-mark {
     top: 0;
     left: 0;
     font-size: .48rem;
-    color: #333;
+    color: #626262;
     font-weight: 300;
     margin-left: 66.65vw;
     margin-top: 17.6vw;    
