@@ -1658,7 +1658,6 @@ h2>.q-mark {
     width: 41.466vw; 
     padding: 10.933vw 0;
     padding-right: 8.533vw;
-    padding-left: 4.266vw;
     font-size: .36rem;
     letter-spacing: 0.06rem;
   }
@@ -2037,6 +2036,11 @@ h2>.q-mark {
   /**********************/
   /***    faq page    ***/
   /**********************/
+  .eyechatch-text.faq {
+    width: 40.4vw;
+    padding-right: 5.333vw;
+    padding-left: 4.266vw;
+  }
   .questions {
     padding: 21.33vw 0 21.33vw 0;
   }
@@ -2672,7 +2676,7 @@ h2>.q-mark {
     bottom: 20%;
   }
   .burger-btn.close .bar_top{      
-    transform: translate(-50%,12px) rotate(45deg);      
+    transform: translate(-50%,9px) rotate(45deg);      
     transition: transform .3s;
     background-color: #fff;    
   }    
@@ -2682,7 +2686,7 @@ h2>.q-mark {
     background-color: #fff;    
   }    
   .burger-btn.close .bar_bottom{      
-  transform: translate(-50%,-10px) rotate(-45deg);      
+  transform: translate(-50%,-12px) rotate(-45deg);      
   transition: transform .3s;
   background-color: #fff;   
   }
