@@ -1337,12 +1337,12 @@ h2>.q-mark {
 .subject-01>dt, .subject-02>dt, .subject-03>dt, .subject-04>dt, .material-01>dt, .material-02>dt {
   font-size: .16rem;
   font-weight: 300;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.04rem;
 }
 .subject-01>dd, .subject-02>dd, .subject-03>dd, .subject-04>dd, .material-01>dd, .material-02>dd {
   font-size: .18rem;
   font-weight: 300;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.04rem;
   margin-left: auto;
   padding-right: 0;
 }
@@ -1385,7 +1385,7 @@ h2>.q-mark {
 .campaign-title {
   font-size: .30rem;
   font-weight: 500;
-  letter-spacing: 0.025;
+  letter-spacing: 0.03rem;
   color: #333;
   padding-left: 1.171875vw;
   padding-top: 0.9375vw;
