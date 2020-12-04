@@ -2682,7 +2682,7 @@ h2>.q-mark {
     background-color: #fff;    
   }    
   .burger-btn.close .bar_bottom{      
-  transform: translate(-50%,-8px) rotate(-45deg);      
+  transform: translate(-50%,-10px) rotate(-45deg);      
   transition: transform .3s;
   background-color: #fff;   
   }
