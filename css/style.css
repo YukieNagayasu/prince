@@ -2761,16 +2761,16 @@ h2>.q-mark {
     width: 33.066vw;
   }
   .footer-nav-item-img {
-    width: 5.066vw;
-    height: 5.066vw;
-    padding: 3.733vw 14vw 0 14vw;
+    width: 6.4vw;
+    height: 6.4vw;
+    padding: 3.7333vw 13.333vw 0 13.333vw;
   }
   .footer-nav-item>a>span {
     font-size: .18rem;
     font-weight: 400;
     color: #fff;
-    padding-top: 2.66vw;
-    padding-bottom: 4vw;
+    padding-top: 1.6vw;
+    padding-bottom: 3.7333vw;
     display: block;
   }
 
