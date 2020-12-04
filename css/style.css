@@ -1690,10 +1690,6 @@ h2>.q-mark {
     line-height: .72rem;
     text-shadow: 2px 2px 10px #fff,-2px 2px 10px #fff,2px -2px 10px #fff,-2px -2px 10px #fff;
   }
-  .home-eyechatch-text-sp2 {
-    color: #626262;
-    font-weight: 200;
-  }
   /* about */
   .home-about {
     position: static;
