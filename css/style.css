@@ -35,7 +35,7 @@ img {
 .effect-fade {
   opacity : 0;
   transform : translate(0, 45px);
-  transition : all 800ms;
+  transition : all 500ms;
 }
   
 .effect-fade.effect-scroll {
