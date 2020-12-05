@@ -17,6 +17,25 @@ $('#slider_sp').slick({
   cssEase: 'linear'  
 });
 
+
+/*
+$(function () {
+  let state = false;
+  $('.burger-btn').click(function () {
+    $('.burger-btn').toggleClass('close');
+    $('.hamburger-wrapper').fadeToggle(500);
+    
+    if (state == false) {
+      $('body').css('overflow', 'hidden');
+      state = true;
+    } else {
+      $('body').css('overflow', 'auto');
+      state = false;
+    }
+  });
+});
+*/
+
 $('.burger-btn').on('click',function(){
   $('.burger-btn').toggleClass('close');
   $('.hamburger-wrapper').fadeToggle(500);
