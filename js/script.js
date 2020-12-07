@@ -18,6 +18,7 @@ $('#slider_sp').slick({
 });
 
 
+// ハンバーバーメニュー
 /*
 $(function () {
   let state = false;
@@ -47,6 +48,7 @@ $('.nav-item').hover(function(){
   $("ul.dropdwn_menu", this).slideUp();
 });
 
+// スクロールイベント for paragraph
 $(function(){
   $(window).scroll(function (){
     $('.effect-fade').each(function(){
@@ -55,7 +57,26 @@ $(function(){
       var windowHeight = $(window).height();
       if (scroll > elemPos - windowHeight  + 100){
         $(this).addClass('effect-scroll');
+      } else {
+        $(this).removeClass('effect-scroll');
       }
     });
   });
 });
+
+// スクロールイベント for image
+(function() {
+  const image = document.querySelectorAll('.img-wrap');
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.intersectionRatio > 0) {
+        entry.target.classList.add('img-animation');
+      } else {
+        entry.target.classList.remove('img-animation');
+      }
+    });
+  });
+  Array.prototype.forEach.call(image, function(img) {
+    observer.observe(img);
+  });
+})();

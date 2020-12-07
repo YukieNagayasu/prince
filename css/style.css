@@ -36,12 +36,46 @@ img {
   opacity : 0;
   transform : translate(0, 45px);
   transition : all 500ms;
-}
-  
+}  
 .effect-fade.effect-scroll {
   opacity : 1;
   transform : translate(0, 0);
 }
+/* scroll effect for image */
+.img-animation {
+  animation: img-opacity 2s cubic-bezier(.4, 0, .2, 1);
+  overflow: hidden;
+  position: relative;
+}
+.img-animation:before {
+  animation: img-animation 2s cubic-bezier(.4, 0, .2, 1) forwards;
+  background: #fff;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+@keyframes img-opacity {
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes img-animation {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+
+
+
 
 
 /***     header     ***/
@@ -388,6 +422,8 @@ li a:hover {
   height: 90vw;
   margin-top: 11.875vw;
 }
+
+/*
 .home-about>.inquiry-img>.inquiry-pc-img {
   position: absolute;
   width: 48.359375vw;
@@ -396,6 +432,21 @@ li a:hover {
   z-index: 10;
   padding-top: 6.25vw;
 }
+
+*/
+
+/* new */
+.home-about>.inquiry-img {
+  position: absolute;
+  width: 48.359375vw;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding-top: 6.25vw;
+}
+
+/* /new */
+
 .home-about>.inquiry-img>.inquiry-sp-img {
   display: none;
 }
@@ -485,12 +536,12 @@ li a:hover {
   position: relative;
   margin-bottom: 9.375vw;
 }
-.home-elementary>.course-pc-img {
+.home-elementary>.course-img {
   position: absolute;
   width: 68.75vw;
   left: 0;
 }
-.home-elementary>.course-sp-img {
+.home-elementary>.course-img>.course-sp-img {
   display: none;
 }
 .home-elementary>.access-menubar {
@@ -531,12 +582,12 @@ li a:hover {
   height: 34.375vw;
   position: relative;
 }
-.home-juniorhischool>.course-pc-img {
+.home-juniorhischool>.course-img {
   position: absolute;
   width: 68.75vw;
   right: 0;
 }
-.home-juniorhischool>.course-sp-img {
+.home-juniorhischool>.course-img>.course-sp-img {
   display: none;
 }
 .home-juniorhischool>.access-menubar {
@@ -1696,6 +1747,23 @@ h2>.q-mark {
     margin-top: 0;
     background-color: #f5f5f5;
   }
+
+
+
+
+  /* new */
+  .home-about>.inquiry-img {
+    position: static;
+    width: auto;
+    left: auto;
+    top: auto;
+    z-index: 10;
+    padding-top: 6.25vw;
+  }
+
+  /* /new */
+
+
   .home-about>.inquiry-img>.inquiry-pc-img {
     display: none;
   }
@@ -1767,12 +1835,15 @@ h2>.q-mark {
     margin-bottom: 0;
     background-color: #f5f5f5;
   }
-  .home-elementary>.course-pc-img {
+  .home-elementary>.course-img {
+    width: 100vw;
+    left: auto;
+  }
+  .home-elementary>.course-img>.course-pc-img {
     display: none;
   }
-  .home-elementary>.course-sp-img {
+  .home-elementary>.course-img>.course-sp-img {
     display: block;
-    width: 100vw;
   }
   .home-elementary>.access-menubar {
     left: 50%;
@@ -1806,12 +1877,15 @@ h2>.q-mark {
     margin-bottom: 0;
     background-color: #f5f5f5;
   }
-  .home-juniorhischool>.course-pc-img {
+  .home-juniorhischool>.course-img {
+    width: 100vw;
+    left: auto;
+  }
+  .home-juniorhischool>.course-img>.course-pc-img {
     display: none;
   }
-  .home-juniorhischool>.course-sp-img {
+  .home-juniorhischool>.course-img>.course-sp-img {
     display: block;
-    width: 100vw;
   }
   .home-juniorhischool>.access-menubar {
     left: 50%;
