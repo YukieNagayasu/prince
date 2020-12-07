@@ -31,6 +31,7 @@ img {
 	height: auto;
 }
 
+
 /***  scroll effect  ***/
 .effect-fade {
   opacity : 0;
@@ -417,55 +418,43 @@ li a:hover {
 }
 
 /* about */
-.home-about {
-  position: relative;
-  height: 90vw;
-  margin-top: 11.875vw;
-}
-
-/*
-.home-about>.inquiry-img>.inquiry-pc-img {
-  position: absolute;
-  width: 48.359375vw;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  padding-top: 6.25vw;
-}
-
-*/
-
-/* new */
-.home-about>.inquiry-img {
-  position: absolute;
-  width: 48.359375vw;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  padding-top: 6.25vw;
-}
-
-/* /new */
-
-.home-about>.inquiry-img>.inquiry-sp-img {
+.home-inquiry>.inquiry-img>.inquiry-sp-img {
   display: none;
 }
-.home-about>.inquiry-texts {
+.home-inquiry {
+  position: relative;
+  height: 90vw;
+  height: 76.5625vw; /* ココの値修正 */
+  margin-top: 11.875vw;
+  margin-bottom: 12.5vw;
+}
+.home-inquiry>.inquiry-img {
+  position: absolute;
+  width: 48.359375vw;
+  transform: translate(0,-50%); 
+  left: 0;
+  top: 50%;
+  z-index: 10;
+}
+.home-inquiry>.inquiry-texts {
   background-color: #fff;
   width: 61.640625vw;
+  height: 68.046875vw;
+  height: 76.5625vw; /* ココの値修正 */
   position: absolute;
   right: 0;
-  top: 0;
+  top: 50%;
+  transform: translate(0,-50%);
   box-shadow: 0px 5px 10px 0px rgba(128, 130, 131, 0.2);
 }
-.home-about>.inquiry-texts>.subtitle {
+.home-inquiry>.inquiry-texts>.subtitle {
   font-size: .36rem;
   font-weight: 400;
   color: #0d3f93;
   letter-spacing: 0.03rem;
   padding: 18.75vw 0 0 16.71875vw;
 }
-.home-about>.inquiry-texts>.subtitle::after {
+.home-inquiry>.inquiry-texts>.subtitle::after {
   margin-top: 4.6875vw;
   content: "";
   width: 4.6875vw;
@@ -473,17 +462,17 @@ li a:hover {
   background-color: #0d3f93;
   display: block;
 }
-.home-about>.inquiry-texts>.inquiry-text {
+.home-inquiry>.inquiry-texts>.inquiry-text {
   padding: 4.6875vw 0 4.6875vw 16.71875vw;
   font-size: .14rem;
   font-weight: 400;
   letter-spacing: 0.03rem;
   line-height: .35rem;
 }
-.home-about>.inquiry-texts>.access-menubar {
+.home-inquiry>.inquiry-texts>.access-menubar {
   padding-right: 0;
 }
-.home-about>.inquiry-texts>.access-menubar>.menubar {
+.home-inquiry>.inquiry-texts>.access-menubar>.menubar {
   width: 22.265625vw;
   font-size: .16rem;
   font-weight: 400;
@@ -492,7 +481,7 @@ li a:hover {
   margin-left: 16.71875vw;
   margin-bottom: 1.5625vw;
 }
-.home-about>.inquiry-texts>.access-menubar:last-of-type>.menubar{
+.home-inquiry>.inquiry-texts>.access-menubar:last-of-type>.menubar{
   margin-bottom: 18.75vw;
 } 
 .access-menubar>.menubar:after {
@@ -692,32 +681,35 @@ li a:hover {
   display: flex;
   flex-direction: column;
 }
-.home-notice-sns>.course-sp-img {
+.home-course-img>.course-sp-img {
   display: none;
 }
 .home-about>.inquiry-texts>.access-menubar {
   padding-right: 0;
 }
+.home-facebook {
+  width: 3.90625vw;
+  padding-top: 0.390625vw;
+  padding-left: 4.6875vw;
+  padding-right: 3.4375vw;
+}
+.home-facebook-icon-sp {
+  display: none;
+}
+.facebook-menu {
+  display: flex;
+}
 .home-notice-sns>.access-menubar>.menubar {
-  width: 23.125vw;
+  width: 35.15625vw;
   font-size: .24rem;
   font-weight: 400;
-  padding: 1.91140625vw 0 1.91140625vw 12.03125vw;
-  position: relative;
+  padding: 1.91140625vw 0;
 }
-.home-notice-sns>.access-menubar>.menubar>span:first-of-type {
-  display: block;
-  padding-bottom: 0.625vw;
-}
-.home-about>.inquiry-texts>.access-menubar:last-of-type {
-  margin-bottom: 18.75vw;
-} 
-.home-notice-sns>.access-menubar>.menubar:before {
-  position: absolute;
-  left: 4.6875vw;
-  content:"\f230";
-  font-size: .50rem;
-  font-family: FontAwesome;
+.home-notice-sns-text>p {
+  font-size: .24rem;
+  font-weight: 400;
+  letter-spacing: .025rem;
+  line-height: .3rem;
 }
 .home-notice-sns>.access-menubar>.menubar:after {
   right: 3.125vw;
@@ -730,9 +722,6 @@ li a:hover {
   height: 27.96875vw;
   display: flex;
   flex-direction: column;
-}
-.home-notice-contact>.course-sp-img {
-  display: none;
 }
 .home-notice-contact>.access-menubar>.menubar {
   width: 30.46875vw;
@@ -1530,8 +1519,6 @@ h2>.q-mark {
 
 
 
-
-
 @media screen and (max-width:850px) {
   .footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.tel-time {
     display: none;
@@ -1540,7 +1527,6 @@ h2>.q-mark {
     display: none;
   }
 }
-
 
 /**********************/
 /***   for SP mode  ***/
@@ -1721,8 +1707,11 @@ h2>.q-mark {
 
 
   /**********************/
-  /***    home  page  ***/
+  /***    home page   ***/
   /**********************/
+  .home-about {
+    margin-top: 21.33vw;
+  }
   .home-eyechatch-text {
     display: none;
   }
@@ -1740,69 +1729,63 @@ h2>.q-mark {
     line-height: .72rem;
     text-shadow: 2px 2px 5px #fff,-2px 2px 5px #fff,2px -2px 5px #fff,-2px -2px 5px #fff;
   }
+
   /* about */
-  .home-about {
-    position: static;
-    height: auto;
-    margin-top: 0;
-    background-color: #f5f5f5;
-  }
-
-
-
-
-  /* new */
-  .home-about>.inquiry-img {
-    position: static;
-    width: auto;
-    left: auto;
-    top: auto;
-    z-index: 10;
-    padding-top: 6.25vw;
-  }
-
-  /* /new */
-
-
-  .home-about>.inquiry-img>.inquiry-pc-img {
+  .home-inquiry>.inquiry-img>.inquiry-pc-img {
     display: none;
   }
-  .home-about>.inquiry-img>.inquiry-sp-img {
+  .home-inquiry>.inquiry-img>.inquiry-sp-img {
     display: block;
-    padding-top: 21.33vw;
+    width: 100vw;
   }
-  .home-about>.inquiry-texts {
+  .home-inquiry {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+  }
+  .home-inquiry>.inquiry-img {
+    position: static;
+    width: 100%;
+    transform: translate(0, 0);
+    top: 0;
+  }
+  .home-inquiry>.inquiry-texts {
     width: auto;
+    height: auto;
     position: static;
     box-shadow: none;
+    top: 0;
+    transform: translate(0,0);
   }
-  .home-about>.inquiry-texts>.subtitle {
+  .home-inquiry>.inquiry-texts>.subtitle {
     font-size: .48rem;
     letter-spacing: 0.05rem;
     padding: 21.33vw 0 0 8vw;
   }
-  .home-about>.inquiry-texts>.subtitle::after {
+  .home-inquiry>.inquiry-texts>.subtitle::after {
     margin-top: 12.8vw;
     width: 13.33vw;
     height: 0.133vw;
   }
-  .home-about>.inquiry-texts>.inquiry-text {
+  .home-inquiry>.inquiry-texts>.inquiry-text {
     padding: 12.8vw 0 12.8vw 8vw;
     font-size: .28rem;
     letter-spacing: 0.05rem;
     line-height: .48rem;
   }
-  .home-about>.inquiry-texts>.access-menubar {
+  .home-inquiry>.inquiry-texts>.access-menubar {
     padding-right: 0;
   }
-  .home-about>.inquiry-texts>.access-menubar>.menubar {
+  .home-inquiry>.inquiry-texts>.access-menubar>.menubar {
     width: 75.46vw;
     font-size: .32rem;
     padding: 5.33vw 0 5.33vw 8.533vw;
     margin-left: 8vw;
     margin-bottom: 5.33vw;
   }
-  .home-about>.inquiry-texts>.access-menubar:last-of-type>.menubar{
+  .home-inquiry>.inquiry-texts>.access-menubar:last-of-type>.menubar{
     margin-bottom: 27.733vw;
   } 
   .access-menubar>.menubar:after {
@@ -1970,24 +1953,38 @@ h2>.q-mark {
     padding-bottom: 21.33vw;
     height: auto;
   }
-  .home-notice-sns>.course-pc-img {
+  .home-course-img>.course-pc-img {
     display: none;
   }
-  .home-notice-sns>.course-sp-img {
+  .home-course-img>.course-sp-img {
     display: block;
   }
+  .home-facebook-icon-pc {
+    display: none;
+  }
+  .home-facebook-icon-sp {
+    display: block;
+  }
+  .home-facebook {
+    width: 9.33vw;
+    padding-top: 2vw;
+    padding-left: 7.466vw;
+    padding-right: 4.66vw;
+  }
+  .facebook-menu {
+    display: flex;
+  }
   .home-notice-sns>.access-menubar>.menubar {
-    width: 67.866vw;
+    width: 89.33vw;
     font-size: .36rem;
     font-weight: 400;
-    padding: 5.33vw 0 5.33vw 21.466vw;
+    padding: 5.33vw 0;
   }
-  .home-notice-sns>.access-menubar>.menubar>span:first-of-type {
-    padding-bottom: 1.066vw;
-  }
-  .home-notice-sns>.access-menubar>.menubar:before {
-    left: 7.466vw;
-    font-size: .70rem;
+  .home-notice-sns-text>p {
+    font-size: .36rem;
+    font-weight: 400;
+    letter-spacing: .05rem;
+    line-height: .5rem;
   }
   .home-notice-sns>.access-menubar>.menubar:after {
     right: 7.466vw;
@@ -2000,12 +1997,6 @@ h2>.q-mark {
     display: block;
     padding-bottom: 23.466vw;
     height: auto;
-  }
-  .home-notice-contact>.course-pc-img {
-    display: none;
-  }
-  .home-notice-contact>.course-sp-img {
-    display: block;
   }
   .home-notice-contact>.access-menubar>.menubar {
     width: 81.866vw;
