@@ -18,8 +18,7 @@ $('#slider_sp').slick({
 });
 
 
-// ハンバーバーメニュー
-/*
+// ハンバーバーメニュー 
 $(function () {
   let state = false;
   $('.burger-btn').click(function () {
@@ -35,12 +34,15 @@ $(function () {
     }
   });
 });
-*/
 
+
+// backup
+/*
 $('.burger-btn').on('click',function(){
   $('.burger-btn').toggleClass('close');
   $('.hamburger-wrapper').fadeToggle(500);
 });
+*/
 
 $('.nav-item').hover(function(){
   $("ul:not(:animated)", this).slideDown();
