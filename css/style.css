@@ -74,13 +74,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
 /***     header     ***/
 .header {
   position: fixed;
@@ -129,11 +122,28 @@ a {
   top: 50%;
   transform: translate(-50%,-50%);
   font-size: 0.2rem;
-  font-weight: 400;
+  font-weight: 300;
 }
-.header-btns>a>.experience-btn>p>.fa-pencil::before, .header-btns>a>.tel-btn>.tel-btn-inner>p>.fa-phone::before {
+.experience-btn-text::before {
+  content: "\f303";
+  font-family: FontAwesome;
   padding-right: 0.78125vw;
-  font-size: .25rem;
+}
+.tel-number::before {
+  content: "\f879";
+  font-family: FontAwesome;
+  padding-right: 0.78125vw;
+}
+.header-tel>.tel-number {
+  font-size: .2rem;
+  font-weight: 400;
+  padding-top: 0.390625vw;
+  font-family: 'Lato', sans-serif;
+}
+.header-tel>.tel-time {
+  padding-top: 0.3125vw;
+  font-size: 0.11rem;
+  font-weight: 300;
 }
 .tel-btn {
   position: relative;
@@ -150,21 +160,12 @@ a {
   border-color: #a4c520;
   color: #a4c520;
 }
-
 .tel-btn-inner {
   position: absolute;
   width: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-}
-.tel-number {
-  font-size: 0.2rem;
-  font-weight: 400; 
-}
-.tel-time {
-  font-size: 0.11rem;
-  font-weight: 300;
 }
 .header-navigations {
   width: 75vw;
@@ -238,7 +239,6 @@ li a:hover {
 }
 
 
-
 .hamberger {
   display: none;
 }
@@ -303,15 +303,13 @@ li a:hover {
   top: 50%;
   transform: translate(-50%,-50%);
 }
-.footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.fa-phone::before {
-  padding-right: 0.78125vw;
-  font-size: .25rem;
-}
-.tel-number {
+.footer-tel>.tel-number {
   font-size: .2rem;
   font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
-.tel-time {
+.footer-tel>.tel-time {
+  padding-top: 0.78125vw;
   font-size: .11rem;
   font-weight: 300;
 }
@@ -347,9 +345,10 @@ li a:hover {
   font-weight: 300;
   font-size: .13rem;
 }
-.chevron {
-  color: #0d3f93;
-  margin: 0 0.625vw;
+.footer-sub-item>a::before {
+  content: "\f138";
+  font-family: FontAwesome;
+  padding: 0 0.78125vw;
 }
 .copyright {
   padding: 1.25vw 0;
@@ -689,15 +688,6 @@ li a:hover {
 .home-about>.inquiry-texts>.access-menubar {
   padding-right: 0;
 }
-.home-facebook {
-  width: 3.90625vw;
-  padding-top: 0.390625vw;
-  padding-left: 4.6875vw;
-  padding-right: 3.4375vw;
-}
-.home-facebook-icon-sp {
-  display: none;
-}
 .facebook-menu {
   display: flex;
 }
@@ -712,6 +702,18 @@ li a:hover {
   font-weight: 400;
   letter-spacing: .025rem;
   line-height: .3rem;
+}
+.home-facebook {
+  width: auto;
+  content: "";
+  padding-top: 0.390625vw;
+}
+.home-facebook::after {
+  content: "\f09a";
+  font-family: FontAwesome;
+  padding-right: 1.78125vw;
+  padding-left: 4.6875vw;
+  font-size: .5rem;
 }
 .home-notice-sns>.access-menubar>.menubar:after {
   right: 3.125vw;
@@ -843,16 +845,19 @@ li a:hover {
   font-weight: 900;
   letter-spacing: 0.025rem;
   color: #0d3f93;
+  font-family: 'Lato', sans-serif;
+}
+.access-inquiry>.inquiry-texts>.inquiry-tel::before {
+  margin-right: 0.78125vw;
+  content: "\f879";
+  font-family: FontAwesome;
 }
 .access-inquiry>.inquiry-texts>.inquiry-tel-time {
-  padding: 0 0 6.25vw 17.96875vw;
+  padding: 0 0 6.25vw 19vw;
   font-size: .18rem;
   font-weight: 400;
   letter-spacing: 0.025rem;
   color: #0d3f93;
-}
-.access-inquiry>.inquiry-texts>.inquiry-tel>.tel-icon {
-  margin-right: 0.78125vw;
 }
 .access-inquiry>.inquiry-texts>.access-menubar {
   padding: 0 0 0 14.21875vw;
@@ -1522,11 +1527,11 @@ h2>.q-mark {
 
 
 @media screen and (max-width:850px) {
-  .footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.tel-time {
+  .header-tel>.tel-time {
     display: none;
   }
-  .header-btns>a>.tel-btn>.tel-btn-inner>p>.tel-time {
-    display: none;
+  .header-tel>.tel-number {
+    padding-top: 0;
   }
 }
 
@@ -1616,19 +1621,16 @@ h2>.q-mark {
     width: 73.33vw;
     height: 24vw;
   }
-  .footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.fa-phone::before {
-    padding-right: 2.66vw;
-    font-size: .50rem;
-  }
-  .footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.tel-number {
+  .footer-tel>.tel-number {
     font-size: .48rem;
-    font-weight: 700;
-    padding-bottom: 4vw;
+    font-weight: 500;
   }
-  .footer-inner>.logo-and-access>a>.tel-box>.tel-btn-inner>p>.tel-time {
-    display: block;
+  .footer-tel>.tel-time {
+    padding-top: 3vw;
     font-size: .28rem;
-    font-weight: 300;
+  }
+  .footer-tel>.tel-number::before {
+    padding-right: 2vw;
   }
   .footer-navigations {
     flex-wrap: wrap;
@@ -1671,9 +1673,8 @@ h2>.q-mark {
   .footer-nav01 .footer-sub-item:last-of-type {
     padding-bottom: 6vw;
   }
-  .chevron {
-    font-size: .26rem;
-    margin: 0 2vw;
+  .footer-sub-item>a::before {
+    padding: 0 2vw;
   }
   .copyright {
     margin: 27.73vw auto 17.6vw auto;
@@ -1961,17 +1962,13 @@ h2>.q-mark {
   .home-course-img>.course-sp-img {
     display: block;
   }
-  .home-facebook-icon-pc {
-    display: none;
-  }
-  .home-facebook-icon-sp {
-    display: block;
-  }
   .home-facebook {
-    width: 9.33vw;
-    padding-top: 2vw;
-    padding-left: 7.466vw;
+    padding-top: 2.66vw;
+  }
+  .home-facebook::after {
+    font-size: .72rem;
     padding-right: 4.66vw;
+    padding-left: 7.466vw;
   }
   .facebook-menu {
     display: flex;
@@ -1980,7 +1977,7 @@ h2>.q-mark {
     width: 89.33vw;
     font-size: .36rem;
     font-weight: 400;
-    padding: 5.33vw 0;
+    padding: 4vw 0;
   }
   .home-notice-sns-text>p {
     font-size: .36rem;
@@ -2767,19 +2764,7 @@ h2>.q-mark {
     z-index: 20;
   }
 
-
-
-
-
-
-
-
-
-
-  
-  /* new */
   .hamburger-lists {
-    /* height: 226.66vw; */
     height: auto;
     background-color:#13469a;
     z-index: 20;
@@ -2789,7 +2774,6 @@ h2>.q-mark {
     padding: 25vw 5vw;
     padding-bottom: 0;
   }
-
   .hamburger-item {
     font-size: .30rem;        
     margin-right: 0;
@@ -2797,19 +2781,21 @@ h2>.q-mark {
     letter-spacing: .05rem;        
     color: #fff;  
     text-align: left;
-    /* padding-left: 10.66vw; */
   }
   .hamburger-subitem {
     font-size: .28rem;
     font-weight: 300;
-    /* padding-left: 13.3vw; */
     padding-bottom: 4vw;
+  }
+  .hamburger-subitem>a::before {
+    content: "\f138";
+    font-family: FontAwesome;
+    padding: 0 0.78125vw;
   }
 
   .hamburger-item>a, .hamburger-subitem>.fa-chevron-circle-right::before, .hamburger-subitem>a {
     color: #fff;
   }
-
   .hamburger-list-01>.hamburger-items>.hamburger-item:first-of-type {
     padding-bottom: 12vw;
   }
@@ -2819,9 +2805,6 @@ h2>.q-mark {
   .hamburger-list-01>.hamburger-items>.hamburger-item {
     padding-bottom: 3vw;
   }
-
-
-
   .hamburger-list-03>.hamburger-items>.hamburger-item {
     padding-bottom: 12vw;
   }
@@ -2832,10 +2815,8 @@ h2>.q-mark {
     padding-bottom: 4vw;
   }
   .hamburger-list-03 {
-    /* margin-bottom: 400px; */
     padding-bottom: 100%; 
   }
-
   .hamburger-list-02>.hamburger-items>.hamburger-item {
     padding-bottom: 4vw;
   }
@@ -2845,54 +2826,6 @@ h2>.q-mark {
   .hamburger-items>.hamburger-subitem {
     padding-left: 2vw;
   }
-  
-
-
-
-
-
-  /* backup */
-  /*
-  .hamburger-nav {
-    height: 226.66vw;
-    height: 100%;
-    background-color:#13469a;
-    z-index: 20;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .hamburger-item {
-    font-size: .4rem;        
-    margin-right: 0;
-    font-weight: 500;
-    letter-spacing: .05rem;        
-    color: #fff;  
-    text-align: left;
-    padding-left: 10.66vw;
-  }
-  .hamburger-subitem {
-    font-size: .32rem;
-    font-weight: 300;
-    padding-left: 13.3vw;
-    padding-bottom: 4vw;
-  }
-  .hamburger-item:nth-of-type(1) {
-    padding-bottom: 10.66vw;
-    padding-top: 18.133vw;
-  }
-  .hamburger-item:nth-of-type(2), .hamburger-item:nth-of-type(5), .hamburger-item:nth-of-type(9), .hamburger-item:nth-of-type(15) {
-    padding-bottom: 4.266vw;
-  }
-  .hamburger-item:nth-of-type(4), .hamburger-item:nth-of-type(8), .hamburger-item:nth-of-type(12), .hamburger-item:nth-of-type(13), .hamburger-item:nth-of-type(14) {
-    padding-bottom: 10.66vw;
-  }
-  .hamburger-item:nth-of-type(18) {
-    padding-bottom: 18.133vw;
-  }
-  .hamburger-item>a, .hamburger-subitem>.fa-chevron-circle-right::before, .hamburger-subitem>a {
-    color: #fff;
-  }
-  */
 
 
   /***********************/
