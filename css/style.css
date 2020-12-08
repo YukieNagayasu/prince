@@ -845,7 +845,7 @@ li a:hover {
   font-weight: 900;
   letter-spacing: 0.025rem;
   color: #0d3f93;
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
 }
 .access-inquiry>.inquiry-texts>.inquiry-tel::before {
   margin-right: 0.78125vw;
