@@ -1799,7 +1799,7 @@ h2>.q-mark {
   /* course */
   .home-course {
     background-color: #f5f5f5;
-    padding-bottom: 9.375vw;
+    padding-bottom: 0;
   }
   .home-course>.subtitle {
     font-size: .48rem;
