@@ -1623,7 +1623,8 @@ h2>.q-mark {
   }
   .footer-tel>.tel-number {
     font-size: .48rem;
-    font-weight: 500;
+    font-weight: 600;
+    font-family:'Lato',sans-serif;
   }
   .footer-tel>.tel-time {
     padding-top: 3vw;
