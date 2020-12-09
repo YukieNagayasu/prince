@@ -122,7 +122,7 @@ a {
   top: 50%;
   transform: translate(-50%,-50%);
   font-size: 0.2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .experience-btn-text::before {
   content: "\f303";
@@ -135,13 +135,13 @@ a {
   padding-right: 0.78125vw;
 }
 .header-tel>.tel-number {
-  font-size: .2rem;
+  font-size: 0.22rem;
   font-weight: 400;
   padding-top: 0.390625vw;
   font-family: 'Lato', sans-serif;
 }
 .header-tel>.tel-time {
-  padding-top: 0.3125vw;
+  padding-top: 0.156vw;
   font-size: 0.11rem;
   font-weight: 300;
 }
