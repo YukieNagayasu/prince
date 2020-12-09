@@ -495,7 +495,7 @@ li a:hover {
 /* course */
 .home-course {
   background-color: #f5f5f5;
-  padding-bottom: 9.375vw;
+  padding-bottom: 13.75vw;
 }
 .home-course>.subtitle {
   font-size: .36rem;
@@ -620,7 +620,7 @@ li a:hover {
   font-weight: 400;
   color: #0d3f93;
   letter-spacing: 0.025rem;
-  padding: 18.75vw 0 0 14.21875vw;
+  padding: 12.5vw 0 0 14.21875vw;
 }
 .home-access>.subtitle::after {
   margin-top: 4.6875vw;
@@ -641,7 +641,7 @@ li a:hover {
   line-height: .50rem;
   padding-top: 4.6875vw;;
   padding-left: 14.21875vw;
-  padding-bottom: 18.75vw;
+  padding-bottom: 12.5vw;
 }
 
 /* notice */
@@ -653,7 +653,7 @@ li a:hover {
   font-weight: 400;
   color: #0d3f93;
   letter-spacing: 0.025rem;
-  padding: 18.75vw 0 0 14.21875vw;
+  padding: 12.5vw 0 0 14.21875vw;
 }
 .home-notice>.subtitle::after {
   margin-top: 4.6875vw;
