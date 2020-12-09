@@ -245,6 +245,9 @@ li a:hover {
 .hamburger-wrapper {
   display: none;
 }
+.hamburger-lists {
+  display: none;
+}
 
 /***     footer     ***/
 .footer {
@@ -840,12 +843,14 @@ li a:hover {
   line-height: .5rem;
 }
 .access-inquiry>.inquiry-texts>.inquiry-tel {
+  font-family: 'Lato', sans-serif;
   padding: 0 0 1.5625vw 14.21875vw;
   font-size: .48rem;
   font-weight: 900;
   letter-spacing: 0.025rem;
   color: #0d3f93;
   /* font-family: 'Lato', sans-serif; */
+  
 }
 .access-inquiry>.inquiry-texts>.inquiry-tel::before {
   margin-right: 0.78125vw;
@@ -1988,8 +1993,8 @@ h2>.q-mark {
   }
   .home-notice-sns>.access-menubar>.menubar:after {
     right: 7.466vw;
-    top: 35%;
     font-size: .5rem;
+    font-size: .36rem;
   }
   .home-notice-contact {
     width: 89.33vw;
@@ -2763,6 +2768,9 @@ h2>.q-mark {
     top: 0;
     left: 0;   
     z-index: 20;
+
+    /* new : for scroll*/
+    overflow-y: scroll;
   }
 
   .hamburger-lists {
@@ -2814,6 +2822,10 @@ h2>.q-mark {
   }
   .hamburger-list-03>.hamburger-items>.hamburger-subitem {
     padding-bottom: 4vw;
+  }
+  .hamburger-list-03>.hamburger-items>.hamburger-subitem:last-of-type {
+    padding-bottom: 10vw;
+    margin-bottom: 10vw;
   }
   .hamburger-list-03 {
     padding-bottom: 100%; 
