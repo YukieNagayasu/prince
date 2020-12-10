@@ -2768,7 +2768,7 @@ h2>.q-mark {
     top: 0;
     left: 0;   
     z-index: 20;
-    overflow: auto;
+    overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
     /* new : for scroll {
