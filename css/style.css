@@ -2767,8 +2767,9 @@ h2>.q-mark {
     top: 0;
     left: 0;   
     z-index: 20;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    /* overflow: scroll; */
+    /* -webkit-overflow-scrolling: touch; */
   }
     /* new : for scroll {
       overflow-y: scroll;
@@ -2783,6 +2784,10 @@ h2>.q-mark {
     padding: 25vw 5vw;
     padding-bottom: 0;
   }
+
+  
+
+
   .hamburger-item {
     font-size: .30rem;        
     margin-right: 0;
