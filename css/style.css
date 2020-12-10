@@ -138,7 +138,7 @@ a {
   font-size: 0.22rem;
   font-weight: 400;
   padding-top: 0.390625vw;
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
 }
 .header-tel>.tel-time {
   padding-top: 0.156vw;
@@ -309,7 +309,7 @@ li a:hover {
 .footer-tel>.tel-number {
   font-size: .2rem;
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
 }
 .footer-tel>.tel-time {
   padding-top: 0.78125vw;
@@ -843,7 +843,6 @@ li a:hover {
   line-height: .5rem;
 }
 .access-inquiry>.inquiry-texts>.inquiry-tel {
-  font-family: 'Lato', sans-serif;
   padding: 0 0 1.5625vw 14.21875vw;
   font-size: .48rem;
   font-weight: 900;
