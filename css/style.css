@@ -2768,8 +2768,11 @@ h2>.q-mark {
     top: 0;
     left: 0;   
     z-index: 20;
-
-    /* new : for scroll*/
+  }
+    /* new : for scroll {
+      overflow-y: scroll;
+  }*/
+  .hamburger-items{
     overflow-y: scroll;
   }
 
