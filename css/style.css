@@ -2768,14 +2768,11 @@ h2>.q-mark {
     top: 0;
     left: 0;   
     z-index: 20;
+    overflow: auto;
   }
     /* new : for scroll {
       overflow-y: scroll;
   }*/
-  .hamburger-items{
-    overflow-y: scroll;
-  }
-
   .hamburger-lists {
     height: auto;
     background-color:#13469a;
