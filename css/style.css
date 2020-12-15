@@ -10,9 +10,6 @@
 	url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
 }
 
-/* PC Width： 1280 px */
-/* SP Width：  750 px */
-
 /**********************/
 /***     common     ***/
 /**********************/
@@ -38,25 +35,21 @@ a {
 .effect-fade {
   opacity : 0;
   transform : translate(0, 45px);
-  transition : all 500ms;
+  transition : all 300ms;
 }  
 .effect-fade.effect-scroll {
   opacity : 1;
   transform : translate(0, 0); 
-  transition-timing-function: ease-out;/* イージング */
+  transition-timing-function: ease-out;
 }
 /* scroll effect for image */
 .img-animation {
-  /* animation: img-opacity 1s cubic-bezier(.4, 0, .2, 1); */
-  animation: img-opacity 1s cubic-bezier(.23, 1, .32, 1);/* easeOutQuint */
-  /*animation: img-opacity 1s ease-out;*/
+  animation: img-opacity 1s cubic-bezier(.23, 1, .32, 1); /* easeOutQuint */
   overflow: hidden;
   position: relative;
 }
 .img-animation:before {
-  /* animation: img-animation 500ms cubic-bezier(.4, 0, .2, 1) forwards; */
-  animation: img-animation 1s cubic-bezier(.23, 1, .32, 1)forwards;/* easeOutQuint */
-  /*animation: img-animation 1s ease-out forwards;*/
+  animation: img-animation 1s cubic-bezier(.23, 1, .32, 1) forwards; /* easeOutQuint */
   background: #fff;
   bottom: 0;
   content: '';
@@ -143,7 +136,6 @@ a {
   font-size: 0.22rem;
   font-weight: 400;
   padding-top: 0.390625vw;
-  /*font-family: 'Lato', sans-serif;*/
 }
 .header-tel>.tel-time {
   padding-top: 0.156vw;
@@ -314,7 +306,6 @@ li a:hover {
 .footer-tel>.tel-number {
   font-size: .2rem;
   font-weight: 400;
-  /*font-family: 'Lato', sans-serif;*/
 }
 .footer-tel>.tel-time {
   padding-top: 0.78125vw;
@@ -433,7 +424,7 @@ li a:hover {
 .home-inquiry {
   position: relative;
   height: 90vw;
-  height: 76.5625vw; /* ココの値修正 */
+  height: 76.5625vw;
   margin-top: 11.875vw;
   margin-bottom: 12.5vw;
 }
@@ -449,7 +440,7 @@ li a:hover {
   background-color: #fff;
   width: 61.640625vw;
   height: 68.046875vw;
-  height: 76.5625vw; /* ココの値修正 */
+  height: 76.5625vw;
   position: absolute;
   right: 0;
   top: 50%;
@@ -852,9 +843,7 @@ li a:hover {
   font-size: .48rem;
   font-weight: 900;
   letter-spacing: 0.025rem;
-  color: #0d3f93;
-  /* font-family: 'Lato', sans-serif; */
-  
+  color: #0d3f93;  
 }
 .access-inquiry>.inquiry-texts>.inquiry-tel::before {
   margin-right: 0.78125vw;
@@ -2773,12 +2762,7 @@ h2>.q-mark {
     left: 0;   
     z-index: 20;
     overflow: auto;
-    /* overflow: scroll; */
-    /* -webkit-overflow-scrolling: touch; */
   }
-    /* new : for scroll {
-      overflow-y: scroll;
-  }*/
   .hamburger-lists {
     height: auto;
     background-color:#13469a;
@@ -2789,10 +2773,6 @@ h2>.q-mark {
     padding: 25vw 5vw;
     padding-bottom: 0;
   }
-
-  
-
-
   .hamburger-item {
     font-size: .30rem;        
     margin-right: 0;
@@ -2811,7 +2791,6 @@ h2>.q-mark {
     font-family: FontAwesome;
     padding: 0 0.78125vw;
   }
-
   .hamburger-item>a, .hamburger-subitem>.fa-chevron-circle-right::before, .hamburger-subitem>a {
     color: #fff;
   }
@@ -2888,5 +2867,4 @@ h2>.q-mark {
     padding-bottom: 3.7333vw;
     display: block;
   }
-
 }

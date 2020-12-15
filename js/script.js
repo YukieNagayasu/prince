@@ -17,8 +17,7 @@ $('#slider_sp').slick({
   cssEase: 'linear'  
 });
 
-
-// ハンバーバーメニュー 
+// hamburger menu
 $(function () {
   let state = false;
   $('.burger-btn').click(function () {
@@ -41,7 +40,7 @@ $('.nav-item').hover(function(){
   $("ul.dropdwn_menu", this).slideUp();
 });
 
-// スクロールイベント for paragraph
+// scroll event for paragraph
 $(function(){
   $(window).scroll(function (){
     $('.effect-fade').each(function(){
@@ -57,7 +56,7 @@ $(function(){
   });
 });
 
-// スクロールイベント for image
+// scroll event for image
 (function() {
   const image = document.querySelectorAll('.img-wrap');
   const observer = new IntersectionObserver(function(entries) {
