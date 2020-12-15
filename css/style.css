@@ -42,16 +42,21 @@ a {
 }  
 .effect-fade.effect-scroll {
   opacity : 1;
-  transform : translate(0, 0);
+  transform : translate(0, 0); 
+  transition-timing-function: ease-out;/* イージング */
 }
 /* scroll effect for image */
 .img-animation {
-  animation: img-opacity 2s cubic-bezier(.4, 0, .2, 1);
+  /* animation: img-opacity 1s cubic-bezier(.4, 0, .2, 1); */
+  animation: img-opacity 500ms cubic-bezier(.23, 1, .32, 1);/* easeOutQuint */
+  /*animation: img-opacity 1s ease-out;*/
   overflow: hidden;
   position: relative;
 }
 .img-animation:before {
-  animation: img-animation 2s cubic-bezier(.4, 0, .2, 1) forwards;
+  /* animation: img-animation 500ms cubic-bezier(.4, 0, .2, 1) forwards; */
+  animation: img-animation 500ms cubic-bezier(.23, 1, .32, 1)forwards;/* easeOutQuint */
+  /*animation: img-animation 1s ease-out forwards;*/
   background: #fff;
   bottom: 0;
   content: '';
