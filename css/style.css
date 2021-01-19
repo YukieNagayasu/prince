@@ -1731,6 +1731,9 @@ h2>.q-mark {
     line-height: .72rem;
     text-shadow: 2px 2px 5px #fff,-2px 2px 5px #fff,2px -2px 5px #fff,-2px -2px 5px #fff;
   }
+  .access-menubar>.menubar {
+    pointer-events: none;
+  }
 
   /* about */
   .home-inquiry>.inquiry-img>.inquiry-pc-img {
